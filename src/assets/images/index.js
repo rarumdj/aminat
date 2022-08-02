@@ -21,7 +21,7 @@ export { default as lazarus } from "./lazarus.png";
 export { default as sunday } from "./sunday.png";
 export { default as heroimg } from "./hero.svg";
 export { default as lines } from "./lines.svg";
-export { default as presentationOne } from "./presentationone.jpeg";
+// export { default as presentationOne } from "./presentationone.jpeg";
 export { default as presentationTwo } from "./presentationtwo.jpeg";
 export { default as presentationThree } from "./presentationthree.jpeg";
 export { default as presentationFour } from "./presentationfour.jpeg";

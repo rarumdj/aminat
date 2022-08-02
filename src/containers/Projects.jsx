@@ -1,14 +1,13 @@
 import React from "react";
 import {
   presentationFour,
-  presentationOne,
   presentationThree,
   presentationTwo,
 } from "../assets/images";
 import ProjectList from "../components/ProjectList";
 const project = [
   {
-    img: presentationOne,
+    img: presentationTwo,
     subtitle: "Whatsapp",
     title: "New Features App",
     industry: "Social Media",
@@ -55,7 +54,9 @@ const Projects = () => {
             <div className="h-[2px] px-16 bg-neutral-500" />
             <h5 className="text-xl text-neutral-500 ">SELECTED PROJECTS</h5>
           </div>
-          <h1 className="lg:text-9xl md:text-7xl text-5xl mt-6 project-font leading-relaxed tracking-widest text-neutral-100">PROJECTS</h1>
+          <h1 className="lg:text-9xl md:text-7xl text-5xl mt-6 project-font leading-relaxed tracking-widest text-neutral-100">
+            PROJECTS
+          </h1>
         </div>
         <div className="md:mt-16 w-full md:px-0 px-4">
           {project.map((item, i) => (
