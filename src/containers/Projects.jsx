@@ -14,6 +14,7 @@ const project = [
     industry: "Social Media",
     type: "UI/UX Design",
     link: "/",
+    linkname:'Case Study'
   },
   {
     img: presentationTwo,
@@ -23,6 +24,7 @@ const project = [
     type: "UI/UX Design",
     link: "/",
     position: "left",
+    linkname:'Case Study'
   },
   {
     img: presentationThree,
@@ -31,6 +33,7 @@ const project = [
     industry: "Consulting",
     type: "UI/UX Design",
     link: "/",
+    linkname:'Case Study'
   },
   {
     img: presentationFour,
@@ -41,6 +44,8 @@ const project = [
     type: "UI/UX Design",
     link: "/",
     position: "left",
+    linkname:'Website',
+    csoon:true
   },
 ];
 const Projects = () => {
@@ -68,6 +73,8 @@ const Projects = () => {
               type={item.type}
               text={item.text}
               position={item.position}
+              cSoon={item.csoon}
+              linkName={item.linkname}
               key={i}
             />
           ))}

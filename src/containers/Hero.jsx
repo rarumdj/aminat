@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { carhero, heroimg } from "../assets/images";
+import { heroimg } from "../assets/images";
 
 const Hero = () => {
   return (
@@ -9,7 +9,10 @@ const Hero = () => {
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            Hi, I’m Aminat Akinode
+            Hi, I’m{" "}
+            <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+              Aminat Akinode
+            </span>
           </h1>
           <div className="flex space-x-3">
             <div className="min-h-full md:block hidden">
@@ -24,7 +27,7 @@ const Hero = () => {
                 experience cuts across brand identity and communication design,
                 product design and UI/UX. I am currently open to work.
               </p>
-              <a href="/" className="flex space-x-3">
+              <Link to="/about" className="flex space-x-3">
                 <p>Meet me</p>{" "}
                 <span className="bg-[#800080] rounded-full h-6 w-6 flex">
                   <Icon
@@ -32,7 +35,7 @@ const Hero = () => {
                     className="text-white h-4 w-4  m-auto"
                   />
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

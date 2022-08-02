@@ -9,6 +9,8 @@ const ProjectList = ({
   link,
   position,
   text,
+  linkName,
+  cSoon,
 }) => {
   return (
     <>
@@ -31,11 +33,18 @@ const ProjectList = ({
             {text && (
               <p className="mb-6 leading-relaxed text-gray-500">{text}</p>
             )}
-            <a
-              href={link}
-              className="mb-8 leading-relaxed font-bold cursor-pointer text-[#800080]">
-              Case Study
-            </a>
+            <div className="flex flex-wrap gap-10">
+              <a
+                href={link}
+                className="mb-8 leading-relaxed font-bold cursor-pointer text-[#800080]">
+                {linkName}
+              </a>
+              {cSoon && (
+                <p className="mb-8 leading-relaxed font-bold text-[#CE79CE]">
+                  *Coming Soon*
+                </p>
+              )}
+            </div>
           </div>
         </div>
       ) : (
@@ -57,11 +66,18 @@ const ProjectList = ({
             {text && (
               <p className="mb-6 leading-relaxed text-gray-500">{text}</p>
             )}
-            <a
-              href={link}
-              className="mb-8 leading-relaxed font-bold cursor-pointer text-[#800080]">
-              Case Study
-            </a>
+            <div className="flex flex-wrap gap-10">
+              <a
+                href={link}
+                className="mb-8 leading-relaxed font-bold cursor-pointer text-[#800080]">
+                {linkName}
+              </a>
+              {cSoon && (
+                <p className="mb-8 leading-relaxed font-bold text-[#CE79CE]">
+                  *Coming Soon*
+                </p>
+              )}
+            </div>
           </div>
         </div>
       )}

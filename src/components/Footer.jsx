@@ -2,20 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const date = new Date();
 
   return (
     <footer className="bg-[#800080] pt-16 pb-8 px-8">
-      <div className="container mx-auto md:px-5 py-16 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col border-y-2 border-white">
+      <div className="container mx-auto md:px-5 md:py-16 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col border-y-2 border-white">
         <div className="w-80 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <div className="space-y-2">
+          <div className="space-y-2 md:mt-0 mt-8">
             <h1 className="text-3xl text-white">
               Let’s develop something awesome together.
             </h1>
           </div>
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 pl-0 mt-10 md:text-left text-center">
-          <div className="lg:w-1/3 md:w-1/2 w-full px-4">
+          <div className="lg:w-1/3 md:w-1/2 px-4">
             <nav className="list-none mb-10 space-y-8">
               <li>
                 <Link to={"/"} className="text-white hover:text-gray-200">
@@ -29,7 +28,7 @@ const Footer = () => {
               </li>
             </nav>
           </div>
-          <div className="lg:w-1/3 md:w-1/2 w-full px-4">
+          <div className="lg:w-1/3 md:w-1/2  px-4">
             <nav className="list-none mb-10 space-y-8">
               <li>
                 <Link to={"/"} className="text-white hover:text-gray-200">
@@ -43,7 +42,7 @@ const Footer = () => {
               </li>
             </nav>
           </div>
-          <div className="lg:w-1/3 md:w-1/2 w-full px-4">
+          <div className="lg:w-1/3 md:w-1/2 px-4">
             <nav className="list-none space-y-8">
               <li>
                 <Link to={"/"} className="text-white hover:text-gray-200">

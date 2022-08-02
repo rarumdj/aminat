@@ -10,7 +10,7 @@ const AboutHeader = () => {
           <h1 className="title-font md:text-8xl text-3xl mb-4 font-medium text-gray-900">
             Aminat
           </h1>
-          <h1 className="title-font md:ml-10 md:text-8xl text-5xl mb-4 font-medium text-gray-900">
+          <h1 className="title-font md:ml-10 md:text-8xl text-5xl mb-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
             Akinode
           </h1>
         </div>
