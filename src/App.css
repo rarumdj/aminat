@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+.header-bubblepattern {
+  background-image: url(assets/images/patternbubble.svg);
+  background-size: cover;
+}
 .aboutheader-bg {
   background-color: #04112c;
   background-image: url(assets/images/aboutheader.svg);
@@ -48,73 +52,69 @@ a {
   height: 400px;
 }
 
-
 .swiper-slide img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-.swiper-slide-active  {
+.swiper-slide-active {
   display: block;
   width: 50% !important;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
-     border-radius: 8px;
-     overflow: hidden;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.swiper-slide-next  {
+.swiper-slide-next {
   display: block;
   width: 25% !important;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-.swiper-pagination{
- position: unset !important;
- display: block;
+.swiper-pagination {
+  position: unset !important;
+  display: block;
 }
 
-.swiper-pagination .swiper-pagination-bullet{
+.swiper-pagination .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
-  border:  2px solid #1354DC !important;
+  border: 2px solid #1354dc !important;
   background: unset !important;
   opacity: 1;
- }
+}
 
- .swiper-pagination .swiper-pagination-bullet-active{
-  background: #1354DC !important;
- }
- 
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #1354dc !important;
+}
 
-
- @media screen and (max-width: 767px) {
-  .swiper-slide-active  {
+@media screen and (max-width: 767px) {
+  .swiper-slide-active {
     display: block;
     width: 100% !important;
     height: 100% !important;
     -o-object-fit: cover;
-       object-fit: cover;
-       border-radius: 16px;
-       overflow: hidden;
+    object-fit: cover;
+    border-radius: 16px;
+    overflow: hidden;
   }
 
-  .swiper-slide-next  {
+  .swiper-slide-next {
     display: block;
     width: 100% !important;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
-
+    object-fit: cover;
   }
   .resize {
     width: calc(100vw / 2 - -40px) !important;
-    height: calc((100vw/2 - 40px) * 1.34) !important;
+    height: calc((100vw / 2 - 40px) * 1.34) !important;
     border-radius: 16px;
   }
- }
+}

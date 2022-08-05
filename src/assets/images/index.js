@@ -11,4 +11,6 @@ export { default as presentationOne } from "./presentationone.jpeg";
 export { default as presentationThree } from "./presentationthree.jpeg";
 export { default as presentationTwo } from "./presentationtwo.jpeg";
 export { default as solving } from "./solving.svg";
+export { default as bubble } from "./bubble.gif";
+export { default as bubblepattern } from "./patternbubble.svg";
 
