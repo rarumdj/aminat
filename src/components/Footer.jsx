@@ -8,12 +8,12 @@ const Footer = () => {
       <div className="container mx-auto md:px-5 md:py-16 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col border-y-2 border-white">
         <div className="w-80 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <div className="space-y-2 md:mt-0 mt-8">
-            <h1 className="text-3xl text-white">
+            <h1 className="md:text-3xl text-xl text-white">
               Let’s develop something awesome together.
             </h1>
           </div>
         </div>
-        <div className="flex-grow flex flex-wrap md:pl-20 pl-0 mt-10 md:text-left text-center">
+        <div className="flex-grow flex flex-wrap md:pl-20 pl-0 md:mt-0 mt-10 justify-center md:text-left text-center">
           <div className="lg:w-1/3 md:w-1/2 px-4">
             <nav className="list-none mb-10 space-y-8">
               <li>
