@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { colaborate, communication, learning, solving } from "../assets/images";
 
 const AboutSection = () => {
@@ -60,9 +61,39 @@ const AboutSection = () => {
       </div>
       <div className="md:px-16 px-6 space-y-4 flex justify-center items-center pb-16">
         <div className="space-x-4 flex">
-          <div className="h-2 w-2 rounded-full bg-[#C85024]" />
-          <div className="h-2 w-2 rounded-full bg-[#800080]" />
-          <div className="h-2 w-2 rounded-full bg-[#DF00DF]" />
+          <motion.div
+            animate={{
+              background: ["#ff00b1", "#C85024",  "#800080",],
+            }}
+            transition={{
+              repeat: Infinity,
+              repeatDelay: 1.1,
+              ease: "easeInOut",
+            }}
+            className="h-2 w-2 rounded-full"
+          />
+          <motion.div
+            animate={{
+              background: ["#C85024", "#800080", "#DF00DF"],
+            }}
+            transition={{
+              repeat: Infinity,
+              repeatDelay: 1.3,
+              ease: "easeInOut",
+            }}
+            className="h-2 w-2 rounded-full"
+          />
+          <motion.div
+            animate={{
+              background: ["#800080", "#DF00DF", "#C85024"],
+            }}
+            transition={{
+              repeat: Infinity,
+              repeatDelay: 1.7,
+              ease: "easeInOut",
+            }}
+            className="h-2 w-2 rounded-full"
+          />
         </div>
       </div>
 
@@ -183,7 +214,6 @@ const AboutSection = () => {
         </p>
       </div>
     </section>
-    
   );
 };
 

@@ -85,7 +85,7 @@ const Navbar = () => {
                 <li>
                   <a
                     className="cursor-pointer"
-                    href="#testimonial"
+                    href="https://drive.google.com/file/d/1yczxg5cSiXhpg9pJQ_KB_Pe8L9GexfNe/view?usp=drivesdk"
                     onClick={handleNavClick}>
                     Download Resume
                   </a>
@@ -95,7 +95,7 @@ const Navbar = () => {
                 <li className=" h-11 rounded-sm border-2 border-[#800080] text-[#2E2626] font-semibold">
                   <a
                     className="px-6 w-full h-full flex justify-center items-center"
-                    href="/"
+                    href="mailto://akinodeaminat1@gmail.com"
                     onClick={handleNavClick}>
                     Contact Me
                   </a>
@@ -130,7 +130,7 @@ const Navbar = () => {
                     <li>
                       <a
                         className="cursor-pointer"
-                        href="#testimonial"
+                        href="https://drive.google.com/file/d/1yczxg5cSiXhpg9pJQ_KB_Pe8L9GexfNe/view?usp=drivesdk"
                         onClick={handleNavClick}>
                         Download Resume
                       </a>
@@ -140,7 +140,7 @@ const Navbar = () => {
                     <li className=" h-11 w-full rounded-sm border-2 border-white text-white font-semibold">
                       <a
                         className="px-6 w-full h-full flex justify-center items-center"
-                        href="/"
+                        href="mailto://akinodeaminat1@gmail.com"
                         onClick={handleNavClick}>
                         Contact Me
                       </a>
