@@ -55,15 +55,17 @@ const AboutSection = () => {
       </div>
 
       <div className="md:px-16 px-6 space-y-4 flex justify-center items-center pb-16">
-        <button className="h-11 w-fit rounded-sm border-2 border-[#800080] text-[#800080] font-semibold px-6 hover:bg-[#800080] hover:text-white transition-all ease-in-out duration-500">
+        <a
+          href="mailto://akinodeaminat1@gmail.com"
+          className="h-11 w-fit rounded-sm border-2 border-[#800080] text-[#800080] font-semibold px-6 hover:bg-[#800080] hover:text-white transition-all ease-in-out duration-500">
           Get In Touch
-        </button>
+        </a>
       </div>
       <div className="md:px-16 px-6 space-y-4 flex justify-center items-center pb-16">
         <div className="space-x-4 flex">
           <motion.div
             animate={{
-              background: ["#ff00b1", "#C85024",  "#800080",],
+              background: ["#ff00b1", "#C85024", "#800080"],
             }}
             transition={{
               repeat: Infinity,
