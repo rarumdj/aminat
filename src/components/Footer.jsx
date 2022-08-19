@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-
+  const date = new Date();
   return (
     <footer className="bg-[#800080] pt-16 pb-8 px-8">
       <div className="container mx-auto md:px-5 md:py-16 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col border-y-2 border-white">
@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-center items-center mt-10 px-8 text-center md:text-sm text-xs">
         <p className="text-white">
-          Copyright ©2022 - Aminat Akinode | All right reserved
+          Copyright ©{date.getFullYear()} - Aminat Akinode | All right reserved
         </p>
       </div>
     </footer>

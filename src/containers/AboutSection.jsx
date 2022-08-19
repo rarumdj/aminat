@@ -54,7 +54,7 @@ const AboutSection = () => {
       </div>
 
       <div className="md:px-16 px-6 space-y-4 flex justify-center items-center pb-16">
-        <button className="h-11 w-fit rounded-sm border-2 border-[#800080] text-[#800080] font-semibold px-6">
+        <button className="h-11 w-fit rounded-sm border-2 border-[#800080] text-[#800080] font-semibold px-6 hover:bg-[#800080] hover:text-white transition-all ease-in-out duration-500">
           Get In Touch
         </button>
       </div>

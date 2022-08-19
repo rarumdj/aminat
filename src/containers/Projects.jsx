@@ -13,8 +13,8 @@ const project = [
     title: "New Features App",
     industry: "Social Media",
     type: "UI/UX Design",
-    link: "/",
-    linkname:'Case Study'
+    link: "https://www.figma.com/proto/mb7SLoVVU2JLuDXnW5uDcl/Jupita.co?node-id=165%3A1115&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5%3A355&show-proto-sidebar=1",
+    linkname: "Case Study",
   },
   {
     img: presentationTwo,
@@ -22,9 +22,9 @@ const project = [
     title: "Tax Calculator App",
     industry: "Finance",
     type: "UI/UX Design",
-    link: "/",
+    link: "https://www.figma.com/proto/mb7SLoVVU2JLuDXnW5uDcl/Jupita.co?node-id=356%3A6308&scaling=min-zoom&page-id=153%3A737&starting-point-node-id=319%3A7063",
     position: "left",
-    linkname:'Case Study'
+    linkname: "Case Study",
   },
   {
     img: presentationThree,
@@ -33,7 +33,7 @@ const project = [
     industry: "Consulting",
     type: "UI/UX Design",
     link: "/",
-    linkname:'Case Study'
+    linkname: "Case Study",
   },
   {
     img: presentationFour,
@@ -44,8 +44,8 @@ const project = [
     type: "UI/UX Design",
     link: "/",
     position: "left",
-    linkname:'Website',
-    csoon:true
+    linkname: "Website",
+    csoon: true,
   },
 ];
 const Projects = () => {
@@ -60,7 +60,9 @@ const Projects = () => {
             <div className="h-[2px] px-16 bg-neutral-500" />
             <h5 className="text-xl text-neutral-500 ">SELECTED PROJECTS</h5>
           </div>
-          <h1 className="lg:text-9xl md:text-7xl text-5xl mt-6 project-font leading-relaxed tracking-widest text-neutral-100">PROJECTS</h1>
+          <h1 className="lg:text-9xl md:text-7xl text-5xl mt-6 project-font leading-relaxed tracking-widest text-neutral-100">
+            PROJECTS
+          </h1>
         </div>
         <div className="md:mt-16 w-full md:px-0 px-4">
           {project.map((item, i) => (
