@@ -6,7 +6,7 @@ const AboutHeader = () => {
     <section className="aboutheader-bg body-font">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left md:mb-16 items-center text-center">
-        <h4 className="my-8 font-bold text-2xl md:hidden block">About Me</h4>
+          <h4 className="my-8 font-bold text-2xl md:hidden block">About Me</h4>
           <h1 className="title-font md:text-8xl text-3xl mb-4 font-medium text-gray-900">
             Aminat
           </h1>
@@ -18,7 +18,7 @@ const AboutHeader = () => {
           <img
             className="object-cover object-center rounded "
             alt="hero"
-            src={aminat}
+            src={"https://aminatakinode.com/images/aminat.png"}
           />
         </div>
       </div>
