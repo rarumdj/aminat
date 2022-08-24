@@ -67,7 +67,7 @@ const Hero = () => {
           </div>
           <div className="relative pb-[55%] w-full h-full">
             <img
-              src={"https://aminatakinode.com/images/bubble.png"}
+              src={bubble}
               alt="hero"
               className="absolute inset-0 m-auto w-full rounded-lg h-full"
             />
