@@ -84,14 +84,14 @@ const Navbar = () => {
                 <li>
                   <a
                     className="cursor-pointer text-[#2E2626] hover:text-[#800080] transition-all ease-in-out"
-                    href="https://drive.google.com/file/d/1yczxg5cSiXhpg9pJQ_KB_Pe8L9GexfNe/view?usp=drivesdk"
+                    href="https://drive.google.com/file/d/15LBEzVD2Jci4j9tNzEcesu375jZvzmu9/view?usp=drivesdk"
                     onClick={handleNavClick}>
                     Download Resume
                   </a>
                 </li>
               </ul>
               <ul className="flex flex-row space-x-4 items-center lg:text-base text-sm">
-                <li className=" h-11 rounded-sm border-2 border-[#800080] text-[#2E2626] font-semibold">
+                <li className=" h-11 rounded-sm border-2 border-[#800080] text-[#2E2626] font-semibold  hover:bg-[#800080] hover:text-white transition-all ease-in-out duration-500">
                   <a
                     className="px-6 w-full h-full flex justify-center items-center"
                     href="mailto://akinodeaminat1@gmail.com"
@@ -127,7 +127,7 @@ const Navbar = () => {
                     <li>
                       <a
                         className="cursor-pointer text-white font-semibold"
-                        href="https://drive.google.com/file/d/1yczxg5cSiXhpg9pJQ_KB_Pe8L9GexfNe/view?usp=drivesdk"
+                        href="https://drive.google.com/file/d/15LBEzVD2Jci4j9tNzEcesu375jZvzmu9/view?usp=drivesdk"
                         onClick={handleNavClick}>
                         Download Resume
                       </a>

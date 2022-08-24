@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   const date = new Date();
@@ -17,42 +16,64 @@ const Footer = () => {
           <div className="lg:w-1/3 md:w-1/2 px-4">
             <nav className="list-none mb-10 space-y-8">
               <li>
-                <Link to={"/"} className="text-white hover:text-gray-200">
+                <a
+                  href="https://www.linkedin.com/in/aminat-akinode-070696186"
+                  target="_blank"
+                  className="text-white hover:text-gray-200"
+                  rel="noreferrer">
                   Linkedin
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to={"/"} className="text-white hover:text-gray-200">
+                <a
+                  href="https://www.instagram.com/just_hameenah"
+                  target="_blank"
+                  className="text-white hover:text-gray-200"
+                  rel="noreferrer">
                   Instagram
-                </Link>
+                </a>
               </li>
             </nav>
           </div>
           <div className="lg:w-1/3 md:w-1/2  px-4">
             <nav className="list-none mb-10 space-y-8">
               <li>
-                <Link to={"/"} className="text-white hover:text-gray-200">
+                <a
+                  href="https://dribbble.com/Hameenah"
+                  target="_blank"
+                  className="text-white hover:text-gray-200"
+                  rel="noreferrer">
                   Dribble
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to={"/"} className="text-white hover:text-gray-200">
+                <a
+                  href="https://www.behance.net/aminatoluwati"
+                  target="_blank"
+                  className="text-white hover:text-gray-200"
+                  rel="noreferrer">
                   Behance
-                </Link>
+                </a>
               </li>
             </nav>
           </div>
           <div className="lg:w-1/3 md:w-1/2 px-4">
             <nav className="list-none space-y-8">
               <li>
-                <Link to={"/"} className="text-white hover:text-gray-200">
+                <a
+                  href="https://twitter.com/_meenaah?t=NWiCNO47TWrhIhfuSKTNvw&s=09"
+                  target="_blank"
+                  className="text-white hover:text-gray-200"
+                  rel="noreferrer">
                   Twitter
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to={"/"} className="text-white hover:text-gray-200">
+                <a
+                  href="mailto://akinodeaminat1@gmail.com"
+                  className="text-white hover:text-gray-200">
                   Send Email
-                </Link>
+                </a>
               </li>
             </nav>
           </div>
