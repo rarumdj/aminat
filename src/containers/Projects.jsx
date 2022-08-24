@@ -32,7 +32,7 @@ const project = [
     title: "Bill Reminder App",
     industry: "Consulting",
     type: "UI/UX Design",
-    link: "/",
+    link: "https://www.figma.com/proto/mb7SLoVVU2JLuDXnW5uDcl/Jupita.co?node-id=526%3A8179&scaling=min-zoom&page-id=290%3A2462&starting-point-node-id=473%3A7549&show-proto-sidebar=1",
     linkname: "Case Study",
   },
   {

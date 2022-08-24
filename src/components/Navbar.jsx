@@ -1,7 +1,8 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import {  NavLink, useLocation, useNavigate } from "react-router-dom";
+import { MenuItems, MenuItemsSmall } from "./Menu";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -65,26 +66,24 @@ const Navbar = () => {
           </button>
           <aside>
             <nav className="md:flex hidden lg:space-x-16 space-x-8">
-              <ul className="flex flex-row space-x-8 items-center text-[#2E2626] font-semibold lg:text-base text-sm">
-                <li>
-                  <Link
-                    className="cursor-pointer"
-                    to="/"
-                    onClick={handleNavClick}>
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="cursor-pointer"
-                    to="about"
-                    onClick={handleNavClick}>
-                    About Me
-                  </Link>
-                </li>
+              <ul className="flex flex-row space-x-8 items-center font-semibold lg:text-base text-sm">
+                {MenuItems.map((items, index) => {
+                  return (
+                    <li key={index}>
+                      <NavLink
+                        className={({ isActive }) =>
+                          isActive ? items.cNameActive : items.cName
+                        }
+                        to={items.url}
+                        onClick={() => setClick(false)}>
+                        {items.title}
+                      </NavLink>
+                    </li>
+                  );
+                })}
                 <li>
                   <a
-                    className="cursor-pointer"
+                    className="cursor-pointer text-[#2E2626] hover:text-[#800080] transition-all ease-in-out"
                     href="https://drive.google.com/file/d/1yczxg5cSiXhpg9pJQ_KB_Pe8L9GexfNe/view?usp=drivesdk"
                     onClick={handleNavClick}>
                     Download Resume
@@ -110,26 +109,24 @@ const Navbar = () => {
               className={`md:hidden block bg-[#800080] absolute top-0 left-0 right-0 bottom-0 min-h-screen`}>
               <div className="flex flex-col justify-center h-full items-center min-w-full px-8">
                 <div className="space-y-16 w-full max-w-md">
-                  <ul className="flex flex-col space-y-10 items-center text-white font-semibold ">
-                    <li>
-                      <Link
-                        className="cursor-pointer"
-                        to="/"
-                        onClick={handleNavClick}>
-                        Home
-                      </Link>
+                  <ul className="flex flex-col space-y-10 items-center">
+                  {MenuItemsSmall.map((items, index) => {
+                  return (
+                    <li key={index}>
+                      <NavLink
+                        className={({ isActive }) =>
+                          isActive ? items.cNameActive : items.cName
+                        }
+                        to={items.url}
+                        onClick={() => setClick(false)}>
+                        {items.title}
+                      </NavLink>
                     </li>
-                    <li>
-                      <Link
-                        className="cursor-pointer"
-                        to="about"
-                        onClick={handleNavClick}>
-                        About Me
-                      </Link>
-                    </li>
+                  );
+                })}
                     <li>
                       <a
-                        className="cursor-pointer"
+                        className="cursor-pointer text-white font-semibold"
                         href="https://drive.google.com/file/d/1yczxg5cSiXhpg9pJQ_KB_Pe8L9GexfNe/view?usp=drivesdk"
                         onClick={handleNavClick}>
                         Download Resume
